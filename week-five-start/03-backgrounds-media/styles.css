@@ -1,0 +1,103 @@
+/* General Styles & Reset */
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 5rem; 
+    color: #fff; 
+    text-align:center; 
+    position: relative; 
+    top: 35%; 
+}
+
+article p {
+    width: 25ch; 
+}
+
+
+/* Layout  & Appearance  */
+
+main {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+div.flex {
+    justify-content: space-between;
+
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+
+/* Backgrounds & Images */
+
+/* PART ONE -  Working with Background and Background Images */ 
+
+header {
+    height: 50vh;
+    /*background-color*/ 
+
+    /*gradients*/ 
+  
+    /* background-image*/ 
+
+    /* controlling background repeat */ 
+
+    /* controlling background-size */ 
+
+    /* position the background image */ 
+
+    /* background-attachment */ 
+    
+    /*background shorthand */ 
+}
+
+
+.photo-container {
+    width: 200px; 
+    height: 150px 
+}
+
+.photo-container img {
+    max-width: 100%;
+    height:auto;
+}
+
+
+/*PART TWO - MANIPULATING IMAGES WITH CSS */
+
+.flex:nth-of-type(1) article:nth-of-type(2) img:hover {
+   
+}
+
+
+/*Try It Out - apply filters to another image featured on the page */ 
