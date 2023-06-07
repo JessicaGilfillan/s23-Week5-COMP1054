@@ -1,0 +1,76 @@
+/* STEP ONE - border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+  margin-top: 25px; 
+  width: 90vw;
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 20px; 
+  background-color: #BADA55;
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;  
+}
+
+.box1 {
+  background-color: purple; 
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid #000;
+}
+
+/* STEP TWO OVERLFOW - set height to 10px, show overflow scroll, hidden, auto  */ 
+.box2 {
+    background-color: orange;  
+    width: 350px;
+    padding: 25px;
+    border: 5px solid #000;
+} 
+
+/* STEP THREE - positioning */
+
+/* 1. relative - relative to it's position in the normal flow */ 
+
+.box1 {
+  position:relative; 
+  left: 50px; 
+}
+
+/* 2. absolute - nearest positioned ancestor */ 
+
+.box2 {
+  position:absolute; 
+  top:0; 
+  /*height:20px;*/
+  /*overflow: hidden;*/ 
+}
+
+/* 3. fixed - positoned relative to the viewport/browser window */ 
+
+.box1 {
+  position: fixed; 
+  top: 0; 
+  left: 25%; 
+  
+  /*z-index:1;*/ 
+}
+
+/* 4. sticky - The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block - Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.*/
+
+.container > h1  {
+  position:sticky; 
+  top: 0; 
+  background-color: rgba(0,0,0,0.5); 
+  color: #fff; 
+  z-index: 2; 
+}
+
+
+ 
